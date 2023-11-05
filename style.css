@@ -1,7 +1,7 @@
 body{
-    width: 100vw;
+    width: 100vw; /*esto es un porcentaje? es la unidad adecuada?*/
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden; /*para que no trate de scrollear*/
     padding: 10px;
 
     background: conic-gradient(
@@ -14,38 +14,30 @@ body{
     );
     background-blend-mode: normal;
 }
-    /* 
-    .bg-box{
-        width: inherit;
-        height: inherit;
-        background-color: grey;
-        border: solid black 4px;
-        opacity: 20%;
-        border-radius: 25px;
-        
-    } */
 
 .createTemplate-view{
-    height:95vh;
-    width:95vw;
     display: flex; 
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
-    gap: 10px;
+    gap: 10px; /*hacer relativo despues*/
+
+    /*otros*/
+    height:95vh; /*no se si es la unidad adecuada*/
+    width:95vw;
+    
 }
 
 .api-search-results{
-    flex-basis: 720px;      
-    flex-grow: 0.75;
-    flex-shrink: 0.5;
-    display: block;
+    flex-basis: 720px;  /*no entiendo como usar esto y no funciona como quiero*/ 
+    flex-grow: 0.75;    /*no entiendo como usar esto y no funciona como quiero*/ 
+    flex-shrink: 0.5;   /*no entiendo como usar esto y no funciona como quiero*/ 
+    display: block; /*por ahí mas tarde se convierte en un flex o grid*/
 
-
+    /*otros*/
     background-color: aquamarine;
-    height:inherit;
-    width: 50%;
+    height:inherit; /*creo que esto es efectivo (?*/
 }
 
 
@@ -61,9 +53,7 @@ body{
     gap: 10px; /*hacer relativo despues*/
 
     /*estilo separado de los campos de flexbox*/
-    height:inherit;/*hacer relativo despues*/
-    
-    
+    height:inherit; /*creo que esto es efectivo (?*/
   }
 
 .flex-items{
@@ -76,14 +66,14 @@ body{
 
     /*estilo separado de los campos de flexitem*/
     text-align: center;
-    margin: 5px;
+    margin: 5px; /*hacer relativo despues*/
  
 }
 
 .contestant-list-item {  
     display: grid;
     text-align: center;
-    margin: 5px;
+    margin: 5px; /*hacer relativo despues*/
     grid-template-columns: 0.7fr 1.3fr;
     grid-template-rows: 0.2fr 0.2fr;
     gap: 0px 0px;
@@ -95,7 +85,7 @@ body{
   
 .portada {
     grid-area: portada; 
-    margin: 5px;
+    margin: 5px; /*hacer relativo despues*/
     align-self: center;
     
 }
