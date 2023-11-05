@@ -1,0 +1,122 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+
+    background: conic-gradient(
+        from 84deg at -6% -19%,
+        rgba(37, 87, 122, 1) 16deg,
+        rgba(59, 168, 164, 1) 38deg,
+        rgba(87, 204, 153, 1) 52deg,
+        rgba(128, 237, 153, 1) 71deg,
+        rgba(199, 249, 204, 1) 86deg
+    );
+    background-blend-mode: normal;
+}
+    /* 
+    .bg-box{
+        width: inherit;
+        height: inherit;
+        background-color: grey;
+        border: solid black 4px;
+        opacity: 20%;
+        border-radius: 25px;
+        
+    } */
+
+.createTemplate-view{
+    height:95vh;
+    width:95vw;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.api-search-results{
+    flex-basis: 720px;      
+    flex-grow: 0.75;
+    flex-shrink: 0.5;
+    display: block;
+
+
+    background-color: aquamarine;
+    height:inherit;
+    width: 50%;
+}
+
+
+.selected-contestants-list {
+
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    overflow-y: scroll;
+    gap: 10px; /*hacer relativo despues*/
+
+    /*estilo separado de los campos de flexbox*/
+    height:inherit;/*hacer relativo despues*/
+    
+    
+  }
+
+.flex-items{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+
+    /*estilo separado de los campos de flexitem*/
+    text-align: center;
+    margin: 5px;
+ 
+}
+
+.contestant-list-item {  
+    display: grid;
+    text-align: center;
+    margin: 5px;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "portada titulo"
+      "portada info";
+  }
+  
+.portada {
+    grid-area: portada; 
+    margin: 5px;
+    align-self: center;
+    
+}
+
+.portada > img{ 
+    max-width: 10vw;
+    min-height: 50px;
+    max-height: 20vh;
+    display: block;
+    margin: auto;
+}
+    
+  
+.titulo {
+    grid-area: titulo;
+    text-wrap: nowrap;
+    
+}
+  
+.info {
+    grid-area: info;
+}
+
+  

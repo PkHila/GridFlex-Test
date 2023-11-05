@@ -1,0 +1,18 @@
+.container{
+    height: 70vh;
+    width: 80vw;
+    border: 1px solid black;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+
+
+.box{
+    height: 300px;
+    margin: 2%;
+    background-color: blueviolet;
+}
